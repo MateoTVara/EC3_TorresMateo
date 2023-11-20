@@ -18,21 +18,16 @@ public class LoginActivity extends AppCompatActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Configurar acciones
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Obtener credenciales ingresadas
                 String usuario = binding.etusuario.getText().toString();
                 String contrasenia = binding.etcontrasenia.getText().toString();
 
-                // Verificar las credenciales
                 if (validarCredenciales(usuario, contrasenia)) {
-                    // Credenciales válidas, iniciar la actividad FormActivity
                     Intent intent = new Intent(LoginActivity.this, FormActivity.class);
                     startActivity(intent);
                 } else {
-                    // Credenciales inválidas, mostrar un mensaje de error
                     binding.etusuario.setError("Credenciales incorrectas");
                     binding.etcontrasenia.setError("Credenciales incorrectas");
                 }

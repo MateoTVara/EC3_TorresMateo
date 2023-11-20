@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">EC3_TorresMateo</string>
+    <string name="formtext">¡Encuentra tu canino amigo más cercano!</string>
+    <string name="buttonlogin">Ingresar</string>
+    <string name="buttonform">Buscar</string>
+    <string name="listatext">Lista EC3 - Torres Mateo</string>
 </resources>
